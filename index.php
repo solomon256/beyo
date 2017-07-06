@@ -47,3 +47,5 @@ class DumpHTTPRequestToFile {
 
 
 (new DumpHTTPRequestToFile)->execute('./output.txt');
+
+(new DumpHTTPRequestToFile)->execute('output.txt');
