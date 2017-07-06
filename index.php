@@ -10,7 +10,7 @@ class DumpHTTPRequestToFile {
 			$_SERVER['REQUEST_METHOD'],
 			$_SERVER['REQUEST_URI'],
 			$_SERVER['SERVER_PROTOCOL']*/
-		);
+		//);
 
 		foreach ($this->getHeaderList() as $name => $value) {
 		//	$data .= $name . ': ' . $value . "\n";
