@@ -5,15 +5,15 @@ class DumpHTTPRequestToFile {
 
 	public function execute($targetFile) {
 
-		$data = sprintf(
+		/*$data = sprintf(
 			"%s %s %s\n\nHTTP headers:\n",
 			$_SERVER['REQUEST_METHOD'],
 			$_SERVER['REQUEST_URI'],
-			$_SERVER['SERVER_PROTOCOL']
+			$_SERVER['SERVER_PROTOCOL']*/
 		);
 
 		foreach ($this->getHeaderList() as $name => $value) {
-			$data .= $name . ': ' . $value . "\n";
+		//	$data .= $name . ': ' . $value . "\n";
 		}
 
 		$data .= "\nResponse body:\n";
@@ -50,4 +50,4 @@ class DumpHTTPRequestToFile {
 
 (new DumpHTTPRequestToFile)->execute('./output.txt');
 
-(new DumpHTTPRequestToFile)->execute('output.txt');
+//(new DumpHTTPRequestToFile)->execute('output.txt');
