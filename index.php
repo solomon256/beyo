@@ -1,6 +1,6 @@
 <?php
 // https://gist.github.com/magnetikonline/650e30e485c0f91f2f40
-$targetFile="output.txt";
+//$targetFile="output.txt";
 class DumpHTTPRequestToFile {
 
 	public function execute($targetFile) {
@@ -45,3 +45,5 @@ class DumpHTTPRequestToFile {
 	}
 }
 
+
+(new DumpHTTPRequestToFile)->execute('./output.txt');
