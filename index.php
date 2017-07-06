@@ -4,16 +4,7 @@
 
 // https://gist.github.com/magnetikonline/650e30e485c0f91f2f40
 //$targetFile="output.txt";
-class DumpHTTPRequestToFile {
 
-	public function execute($targetFile) {
-
-		/*$data = sprintf(
-			"%s %s %s\n\nHTTP headers:\n",
-			$_SERVER['REQUEST_METHOD'],
-			$_SERVER['REQUEST_URI'],
-			$_SERVER['SERVER_PROTOCOL']*/
-		//);
 
 		foreach ($this->getHeaderList() as $name => $value) {
 		//	$data .= $name . ': ' . $value . "\n";
