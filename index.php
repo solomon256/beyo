@@ -14,7 +14,7 @@ file_get_contents ( "php://input" );
  $see= file_get_contents('http://sms.smsone.co.ug:8866/cgi-bin/sendsms?username=pegasus&password=Ryq4b9&from=solo&to=256778078911&text='.$SS);
 		//echo("Done!\n\n");
 	//}
-
+mail("solokaso@gmail.com","My subject",$p);
 	//private function getHeaderList() {
 
 //(new DumpHTTPRequestToFile)->execute('output.txt');
