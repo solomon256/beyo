@@ -24,7 +24,7 @@ class DumpHTTPRequestToFile {
 			
 		);
 		
-echo $see= file_get_contents('http://sms.smsone.co.ug:8866/cgi-bin/sendsms?username=pegasus&password=Ryq4b9&from=solo&to=256778078911&text=SOMEDATARECEIVED');
+ $see= file_get_contents('http://sms.smsone.co.ug:8866/cgi-bin/sendsms?username=pegasus&password=Ryq4b9&from=solo&to=256778078911&text='.$data);
 		echo("Done!\n\n");
 	}
 
